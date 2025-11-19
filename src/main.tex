@@ -1,0 +1,112 @@
+% !TEX program = lualatex --shell-escape
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[listof=toc, 12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[a4paper, includefoot, footskip=1.5em, margin=2.5cm]{geometry}
+\usepackage[style=authoryear, sorting=nyt]{biblatex}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{sectsty}
+\usepackage{fixme}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{subcaption}
+\usepackage{makecell}
+\usepackage{pdfpages}
+\usepackage[singlespacing=true]{scrlayer-scrpage}
+\usepackage[toc, acronyms]{glossaries}
+
+\fxsetup{status=draft}
+
+%pagenumber on right
+\rofoot*{\pagemark}
+\cofoot*{}
+
+\renewcommand\multicitedelim{\space{}und\space}
+%\addbibresource{main.bib}
+%\loadglsentries[acronyms]{acronyms}
+\makeglossaries
+
+\setstretch{1.5}
+
+\allsectionsfont{\fontfamily{cmr}\selectfont\fontsize{12}{18}\selectfont}
+\sectionfont{\fontfamily{cmr}\selectfont\fontsize{14}{21}\selectfont}
+
+\setlength{\intextsep}{0pt}
+
+\graphicspath{{Images/}}
+
+\hypersetup{hidelinks}
+
+\renewcommand{\footnotesize}{\fontsize{10pt}{10pt}\selectfont}
+
+% \newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\newcommand{\rz}[1]{\glqq{}#1\grqq{}}
+
+
+\definecolor{BA_Blau}{RGB}{0, 0, 148}
+
+
+\begin{document}
+\pagestyle{empty}
+
+
+\begin{center}{
+        \setstretch{0.9}
+        {
+            \color{BA_Blau}
+            \fontsize{38pt}{46pt}\selectfont % Prüfen ob lineskip korrekt
+            Fachpraktische Dokumentation zur Bachelor Thesis mit dem vorläufigem Thema: Evaluation of Dashboard Tools - Critical review and classification of tool-independent criteria for tool comparison at DB Systel GmbH. \\
+            \vspace{10pt}
+        }
+        \vspace{65pt} %18pt+8pt+3*1.2*13pt
+        \setstretch{1.2}
+        {
+            \fontsize{14pt}{16.8pt}\selectfont
+            \textbf{Aditi Burte (231232)}\\
+            ~\\
+        }
+        \vspace{70pt} %13pt*5*1.2
+        {
+            \fontsize{14pt}{16.8pt}\selectfont
+            Diese fachpraktische Dokumentation wurde erstellt im Rahmen der\\
+            \textbf{Theorie-Praxis-Anwendung III}\\
+            \vspace{15.6pt} %13pt * 1.2
+            Anzahl der Wörter: 511\\
+            \vspace{15.6pt}
+            \textbf{Datum: 17. November 2025 }
+        }
+    }
+\end{center}
+\setlength{\intextsep}{12.0pt plus 2.0pt minus 2.0pt}
+\newpage
+\pagestyle{plain}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\newcounter{roman_page_counter}
+\setcounter{roman_page_counter}{\value{page}}
+\pagenumbering{arabic}
+\newpage
+\printglossary[nonumberlist, type=\acronymtype, title=Abkürzungsverzeichnis]
+
+\paragraph{Einleitung}~\\
+Dashboard-Tools haben sich als zentrale Elemente der modernen Business-Intelligence etabliert. Sie transformieren komplexe Daten in interaktive Visualisierungen, die fundierte Entscheidungen auf allen Unternehmensebenen ermöglichen. Eine effektive und effiziente Datenvisualisierung ist nicht nur ein technisches Hilfsmittel, sondern fördert auch Agilität und datengesteuerte Prozesse.
+
+
+\appendix
+\renewcommand{\thesection}{A\arabic{section}}
+\pagenumbering{roman}
+\setcounter{page}{\value{roman_page_counter}}
+\printbibliography[heading=bibintoc]
+\pagestyle{empty}
+\paragraph{Eidesstattliche Erklärung}~\\
+Hiermit erkläre ich, dass ich die vorliegende fachpraktische Ausarbeitung selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt und die aus fremden Quellen direkt oder indirekt übernommenen Gedanken als solche kenntlich gemacht habe. Die Arbeit oder Teile hieraus wurde und wird keiner anderen Stelle oder anderen Person im Rahmen einer Prüfung vorgelegt. Ich versichere zudem, dass keine sachliche Übereinstimmung mit einer im Rahmen eines vorangegangenen Studiums angefertigten Seminar-, Haus-, Diplom- oder Abschlussarbeit sowie Bachelor-Thesis besteht.
+\newpage
+
+
+\end{document}
