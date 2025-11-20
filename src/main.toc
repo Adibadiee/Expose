@@ -1,0 +1,14 @@
+\babel@toc {english}{}\relax 
+\contentsline {paragraph}{\nonumberline Gender-Hinweis}{2}{paragraph*.2}%
+\contentsline {paragraph}{\nonumberline Sperrvermerk}{3}{paragraph*.4}%
+\contentsline {section}{\nonumberline List of Figures}{ii}{section*.6}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Research Question}{1}{section.2}%
+\contentsline {section}{\numberline {3}State of Research}{1}{section.3}%
+\contentsline {section}{\numberline {4}Relevance}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Academic Relevance}{2}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Practical Relevance}{2}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Resources}{2}{section.5}%
+\contentsline {section}{\numberline {6}Rough Draft Table of Contents}{2}{section.6}%
+\contentsline {paragraph}{\nonumberline Eidesstattliche Erklärung}{iv}{paragraph*.8}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

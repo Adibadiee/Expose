@@ -2,7 +2,7 @@
 % !TEX encoding = UTF-8 Unicode
 
 \documentclass[listof=toc, 12pt]{scrartcl}
-\usepackage[ngerman]{babel}
+\usepackage[ngerman, english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 \usepackage[a4paper, includefoot, footskip=1.5em, margin=2.5cm]{geometry}
@@ -80,12 +80,12 @@
 
 \begin{tabular}{@{} l l @{}}
     \textbf{Studiengruppe:} & [WS-23-YY] \\
-    \textbf{Name Studierender:} & [Aditi Burte] \\
-    \textbf{Anzahl der Wörter} (inkl. Zitate/Fußnoten): & [xxxxx] \\
-    \textbf{Anzahl der Wörter} (exkl. Zitate/Fußnoten): & [xxxxx] \\
-    \textbf{Akademischer Gutachter:} & [Vorname Name] \\
-    \textbf{Betrieblicher Gutachter:} & [JAn AB Koch] \\
-    \textbf{Abgabedatum:} & [24.11.2025] \\
+    \textbf{Student Name:} & [Aditi Burte] \\
+    \textbf{Number of Words} (inkl. Zitate/Fußnoten): & [xxxxx] \\
+    \textbf{Number of Words} (exkl. Zitate/Fußnoten): & [xxxxx] \\
+    \textbf{Academic Revierwer:} & [Vorname Name] \\
+    \textbf{Company reviewer:} & [JAn AB Koch] \\
+    \textbf{Date of Submission:} & [24.11.2025] \\
 \end{tabular}
 
 \end{flushleft}
@@ -114,17 +114,72 @@
 
 \setlength{\intextsep}{12.0pt plus 2.0pt minus 2.0pt}
 \newpage
+\paragraph{Gender-Hinweis}~\\
+In der vorliegenden Ausarbeitung wird darauf verzichtet, bei Personenbezeichnungen sowohl die männliche als auch die weibliche Form zu nennen. Die männliche Form gilt in allen Fällen, in denen dies nicht explizit ausgeschlossen wird, für alle Geschlechter.
+\newpage
+
+\paragraph{Sperrvermerk}~\\
+Die vorliegende Fachpraktische Ausarbeitung beinhaltet interne vertrauliche
+Informationen der DB Systel GmbH. Die Weitergabe des Inhaltes dieser Arbeit und eventuell beiliegender
+Abbildungen, Tabellen und Daten im Gesamten oder in Teilen ist grundsätzlich untersagt. Es dürfen
+keinerlei Kopien oder Abschriften, auch nicht in digitaler Form, gefertigt werden. Ausnahmen bedürfen
+der schriftlichen Genehmigung durch die DB Systel GmbH.
+\newpage
+
 \pagestyle{plain}
 \pagenumbering{roman}
 \setcounter{page}{1}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\printglossary[nonumberlist, type=\acronymtype, title=Abkürzungsverzeichnis]
+\newpage
 \newcounter{roman_page_counter}
 \setcounter{roman_page_counter}{\value{page}}
 \pagenumbering{arabic}
-\newpage
-\printglossary[nonumberlist, type=\acronymtype, title=Abkürzungsverzeichnis]
 
-\paragraph{Einleitung}~\\
-Dashboard-Tools haben sich als zentrale Elemente der modernen Business-Intelligence etabliert. Sie transformieren komplexe Daten in interaktive Visualisierungen, die fundierte Entscheidungen auf allen Unternehmensebenen ermöglichen. Eine effektive und effiziente Datenvisualisierung ist nicht nur ein technisches Hilfsmittel, sondern fördert auch Agilität und datengesteuerte Prozesse.
+\section{Introduction}~\\
+Data Visualization and Dashboarding have become an important tool for data based decision-making. However, the selection of an apt tool in regards with the problem that needs to be visualized proves to be challenging. At DB Systel GmBH, this approach to this process is currently  decentralized and fragmented. This leads to disparencies of Know-How or Information related to the tools, in the beginning of the journey. The aim of the Thesis is to identity which criteria or requirements are essential in order to effectively choose the most ideal tool for optimal results. 
+
+\section{Research Question}
+The central question guiding this thesis is: "Which criteria are necessary for the effective evaluation of dashboard tools at large enterprise like DB Systel GmbH?"
+The question focuses on determining evaluation criteria on the basis of existing literature, comparative tool analysis and expert interviews. 
+
+\section{State of Research}
+Existing literature offer numerous models for evaluating business intelligence tools. They mostly in cooperate the technical, functional and economic criteria. Providers such as Gartner and BARC() periodically review Business Intelligence Tools. However, these reviews are generalized and definitely not tailored for one large enterprise like the DB Systel GmbH. 
+This gap is the driving force for this thesis, it aims deriving  criteria through systematic tool comparisons and qualitative insights from internal experts. This aligns with academic calls for more evidence-based evaluation methodologies combining case studies and interview data to refine BI selection frameworks.
+
+\section{Relevance}
+\subsection{Academic Relevance}
+This research contributes to the body of knowledge on software and BI system evaluation by refining existing methods for assessing dashboard tools. It expands evaluation theory by integrating functional and non-functional aspects—ranging from usability and data integration capabilities to organizational and strategic alignment. Through this, the study advances the methodological design of evaluation frameworks, particularly concerning the contextualization of selection criteria for enterprise-scale applications.
+
+\subsection{Practical Relevance}
+Practically, the study addresses the inefficiencies observed in DB Systel GmbH's current selection practices. The absence of standardized evaluation criteria leads to inconsistent and redundant development processes. A structured evaluation framework would mitigate these inefficiencies by enabling objective tool comparisons and improving decision transparency. Moreover, standardization will facilitate knowledge exchange across teams, reduce maintenance and training costs, and support strategic alignment between departments. The research thereby provides a concrete problem-solving approach with immediate managerial relevance.
+
+\section{Resources}
+
+\section{Rough Draft Table of Contents}
+1.	Problem Foundation and theoretical Background
+ .	Introduction
+ .	The Dashboard Tool Selection Problem
+ .	Theoretical Foundations for Tool Evaluation
+ .	Structure of my Thesis
+2.	Comparative Analysis of Prevalent Dashboard Tools
+ .	Selection of Dashboard Tools for the Analysis
+ .	Justification for this selection
+ .	Defining set of criteria
+3.	Developing the Standardized Criteria Catalogue. 
+(find existing frameworks)
+(find research papers or journal)
+4.	Application of the catalogue
+5.	Discussion and findings
+ .	Critical review of the methodology and catalogue
+6.	Conclusion
+ .	Summary of the findings 
+ .	Answering the research question
+ .	Limitation of the Study
+ .	Recommendation for DB Systel GmbH and Outlook fro Future Research.
 
 
 \appendix
